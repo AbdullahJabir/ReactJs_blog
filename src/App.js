@@ -1,15 +1,26 @@
 import React from 'react';
-import Home from './containers/Home'
-
 import './App.css';
-import Hero from './components/Hero'
+import Home from './containers/Home';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ContactUS from './containers/ContactUs';
+import Post from './containers/Post';
 
 function App() {
   return (
-    <div className="App">
-     <Home/>
-     <Hero/>
-    </div>
+   <Router>
+      <div className="App">
+        <Header />
+        <Hero />
+
+        <Route path="/" exact component={Home} />
+        <Route path="/contact-us"  component={ContactUS}/>
+        <Route path="/post" component={Post} />
+      
+        
+      </div>
+    </Router>
   );
 }
 

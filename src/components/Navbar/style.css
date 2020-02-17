@@ -21,9 +21,31 @@
     color: #565673;
     padding: 0 10px;
 }
-.search{
+.search form{
 
     display: flex;
-    height:32px;
-    /*margin: 0 10px;*/
+    /*height:32px;*/
+    margin: 0 10px;
+}
+.search img{
+    height: 22px;
+}
+
+.searchInput{
+    border: 0;
+    width: 0;
+    transition: width 0.1s ease-in;
+}
+
+.searchInput.active{
+    width: 150px;
+    /*background-color: red;*/
+}
+
+.searchInput:focus{
+    outline: none;
+}
+
+.searchIcon{
+    cursor: pointer;
 }
