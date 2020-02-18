@@ -9,9 +9,11 @@ import Sidebar from '../../components/Sidebar';
 **/
 
 const Post = (props) => {
+	console.log(props);
+
   return(
     <section className="container">
-      <BlogPost></BlogPost>
+      <BlogPost{...props} ></BlogPost>
       <Sidebar></Sidebar>
     </section>
    )
