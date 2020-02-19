@@ -3,19 +3,25 @@ import './style.css';
 import Card from '../../components/UI/Card';
 import BlogPost from '../../components/BlogPost';
 import Sidebar from '../../components/Sidebar';
+import Layout from '../../components/Layout';
+
+
 /**
 * @author
-* @function ContactUS
+* @function Post
 **/
 
 const Post = (props) => {
-	console.log(props);
+
+    console.log(props);
+
 
   return(
-    <section className="container">
-      <BlogPost{...props} ></BlogPost>
-      <Sidebar></Sidebar>
-    </section>
+  	
+        <Layout>
+          <BlogPost {...props} />
+        </Layout>
+        
    )
 
  }
