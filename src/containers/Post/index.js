@@ -5,7 +5,6 @@ import BlogPost from '../../components/BlogPost';
 import Sidebar from '../../components/Sidebar';
 import Layout from '../../components/Layout';
 
-
 /**
 * @author
 * @function Post
@@ -17,11 +16,9 @@ const Post = (props) => {
 
 
   return(
-  	
         <Layout>
           <BlogPost {...props} />
         </Layout>
-        
    )
 
  }

@@ -1,9 +1,14 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
 
-const Header=props=>{
-	return(
-		<header className="header">
+/**
+* @author
+* @function Header
+**/
+
+const Header = (props) => {
+  return(
+    <header className="header">
         <nav className="headerMenu">
             <a href="#">Home</a>
             <a href="#">About Us</a>
@@ -13,8 +18,8 @@ const Header=props=>{
             socila Media links
         </div>
     </header>
+   )
 
-		)
-}
+ }
 
 export default Header

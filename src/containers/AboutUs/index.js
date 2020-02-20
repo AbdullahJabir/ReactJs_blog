@@ -1,15 +1,17 @@
 import React from 'react'
+import Sidebar from '../../components/Sidebar';
+
 
 /**
 * @author
 * @function ContactUS
 **/
 
-const ContactUS = (props) => {
+const AboutUS = (props) => {
   return(
     <div>This page is developing now</div>
    )
 
  }
 
-export default ContactUS
+export default AboutUS

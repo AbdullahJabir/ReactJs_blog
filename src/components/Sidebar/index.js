@@ -31,10 +31,11 @@ const Sidebar = (props) => {
                     <span>About Us</span>
                 </div>
                 <div className="profileImageContainer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGAb43NxZswWRLw9RoxC8YwykXlLy_efq2r674Xj0ffRR3D-0P" alt="" />
+                <img src={require('../../blogPostImages/gazi.JPG')} alt="Post Image" />
+                   
                 </div>
                 <div className="cardBody">
-                    <p className="personalBio">My name is Rizwan  Khan I am a software developer specialization in Front end developement....:)</p>
+                    <p className="personalBio">My name is Abdullah Jabir Al Gazi. I am a software Developer.Now I am working in SWOT System Ltd as a Web Developer....:)</p>
                 </div>
             </Card>
 
